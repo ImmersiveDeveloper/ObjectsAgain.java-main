@@ -10,7 +10,7 @@ import java.util.List;
 public abstract class DiscountPolicy {
     private List<DiscountCondition> conditions = new ArrayList<>();
 
-    public DiscountPolicy(List<DiscountCondition> conditions) {
+    public DiscountPolicy(DiscountCondition conditions) {
         this.conditions = Arrays.asList(conditions);
     }
 
