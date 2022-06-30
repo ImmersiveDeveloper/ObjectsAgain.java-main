@@ -15,7 +15,9 @@ public class PeriodCondition implements DiscountCondition{
         this.endTime = endTime;
     }
 
-    public boolean isSatisfiedBy(Screening screening){
+
+    @Override
+    public boolean isSatisfiedBy(Screening screening) {
         return screening.getStartTime().getDayOfWeek().equals(dayOfWeek) &&
                 startTime.compareTo(screening.getStartTime().toLocalTime()) <= 0 &&
                 endTime.compareTo(screening.getStartTime().toLocalTime()) >= 0;
