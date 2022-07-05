@@ -1,7 +1,7 @@
 package movieTicketing;
 
 public class Reservation {
-    private Customer customer;
+    private Customer customer; // 코드 다시 살펴보기
     private Screening screening;
     private Money fee;
     private int audienceCount
